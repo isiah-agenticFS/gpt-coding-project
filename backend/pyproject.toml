@@ -1,0 +1,13 @@
+[project]
+name = "trading-workstation-backend"
+version = "0.1.0"
+description = "Local-first quant, risk, orchestration, and backtesting services"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.8,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
